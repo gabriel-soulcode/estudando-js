@@ -154,12 +154,12 @@ const n5 = "11";
 
 // Operador Ternário
 // condição ? caso for verdadeiro : caso for falso;
-let mesagem;
+let mensagem;
 let nota1 = 4;
 let nota2 = 10;
 let condicao = ((nota1 + nota2) / 2) >= 7;
 
-mesagem = condicao ? "Aprovado" : "Reprovado"; // condição
-console.log(mesagem);
+mensagem = condicao ? "Aprovado" : "Reprovado"; // condição
+console.log(mensagem);
 
 // aritméticos > relacionais > logicos
