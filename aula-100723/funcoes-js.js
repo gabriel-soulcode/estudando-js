@@ -64,3 +64,8 @@ console.log(Math.round(2.7389)); // arredonda para o mais proximo
 console.log(Math.sqrt(625));
 console.log(Math.abs(-8));
 console.log(Math.floor(Math.random() * 100 + 1)); // [1, 100]
+
+// autoboxing
+
+let num = 1;
+num.toFixed();
