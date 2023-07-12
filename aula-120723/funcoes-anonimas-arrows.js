@@ -111,3 +111,13 @@ teste((numero) => {
 teste(numero => numero*2); // pode-se omitir o "return" e as { } qnd há apenas uma instrução
 
 // setTimeout(_ => console.log("Olá, Mundo"), 3000); // _ == () utiliza-se qnd não há parametros
+
+// Recursividade -> Chamada de uma função pela mesma função
+function fatorial(numero) {
+    if(numero == 1) {
+        return 1;
+    }
+    return numero * fatorial(numero - 1);
+}
+console.log(fatorial(4));
+console.log(fatorial(6));
