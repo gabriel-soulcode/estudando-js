@@ -68,9 +68,9 @@ function erro() {
 //     console.log("SetTimeout com Função Anônima");
 // }, 2000);
 
-setTimeout(() => {
-    console.log("SetTimeout com Função Arrow");
-}, 2000);
+// setTimeout(() => {
+//     console.log("SetTimeout com Função Arrow");
+// }, 2000);
 
 // function() {
 // }
@@ -84,3 +84,30 @@ setTimeout(() => {
     console.log(resultado + " " + requisicao)
     return 0;
 }
+
+// Testando a utilização das arrow functions
+function teste(callback) {
+    let valor = callback(130);
+    console.log(valor);
+}
+
+// Primeira forma de executar "teste" (Função Expression)
+function vezes2(numero) {
+    return (numero * 2);
+}
+teste(vezes2);
+
+// Segunda forma de executar "teste" (Função Anonima)
+teste(function(numero) {
+    return (numero * 2);
+});
+
+// Terceira forma de executar "teste" (Função Arrow) - Modo 1
+teste((numero) => {
+    return (numero * 2);
+});
+
+// Quarta forma de executar "teste" (Função Arrow) - Modo 2
+teste(numero => numero*2); // pode-se omitir o "return" e as { } qnd há apenas uma instrução
+
+// setTimeout(_ => console.log("Olá, Mundo"), 3000); // _ == () utiliza-se qnd não há parametros
