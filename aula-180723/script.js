@@ -20,5 +20,14 @@ let negritosParagrafo = document.querySelectorAll("p b"); // é muito aplicado h
 // titulo.style.fontSize = "100px";
 let paragrafo = document.querySelector("p");
 paragrafo.innerHTML = "Hoje na aula de <b>JavaScript</b> conversamos sobre DOM. Entendi muita coisa. Da para criar muitas ideias."
-console.log(paragrafo.innerText); // conteudo textual do elemento
-console.log(paragrafo.innerHTML); // conteudo textual + html do elemento
+// console.log(paragrafo.innerText); // conteudo textual do elemento
+// console.log(paragrafo.innerHTML); // conteudo textual + html do elemento
+
+
+// uso de classes com JavaScript
+let caixa = document.querySelector('#informe');
+caixa.classList.add("erro"); // adiciona uma nova classe
+caixa.classList.remove("mensagem"); // remove uma classe
+caixa.classList.toggle("atencao"); // adiciona se não existe
+caixa.classList.toggle("atencao"); // remove se existir
+console.log(caixa);
